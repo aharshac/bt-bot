@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="harsha.btbot.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:text="@string/connection_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/tv_state"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_connected_device">
+
+        <TextView
+            android:text="@string/connected_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/tv_device_name" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/tv_device_address"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:stretchColumns="0,1,2"
+        android:id="@+id/tl_bot_ctrl"
+        android:layout_marginBottom="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="@string/controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_span="3"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:text="@string/ctrl_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_ctrl_w"
+                android:layout_column="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textAllCaps="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:text="@string/ctrl_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_ctrl_a"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textAllCaps="true" />
+
+            <Button
+                android:text="@string/ctrl_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_ctrl_s"
+                android:layout_column="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textAllCaps="true" />
+
+            <Button
+                android:text="@string/ctrl_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_ctrl_d"
+                android:layout_column="2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textAllCaps="true" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_scan"
+            android:layout_weight="1"
+            android:textAllCaps="true" />
+
+        <Button
+            android:text="@string/disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_disconnect"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BTBot</string>
+    <string name="scan">Connect</string>
+    <string name="connect">Connect to device</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connected_to">Connected Device</string>
+    <string name="controls">Bot Controls</string>
+    <string name="ctrl_w">W</string>
+    <string name="ctrl_a">A</string>
+    <string name="ctrl_s">S</string>
+    <string name="ctrl_d">D</string>
+    <string name="connection_state">Connection State</string>
+</resources>
